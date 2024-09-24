@@ -23,7 +23,7 @@ jobs:
       - name: 여러 명령어를 쓰려면
         run: |
           echo "many"
-          echo "once with |"
+          echo "once with|"
 
       - name: githubAction 내에 있는 변수
         run: |
