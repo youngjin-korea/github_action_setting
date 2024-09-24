@@ -43,5 +43,5 @@ jobs:
       - name: 노출되면 안되는 값
         run: |
           echo ${{ secrets.MY_KEY }}
-          # setting > secrit
+          # settings > secrets and variables > action 
 ```
