@@ -25,11 +25,12 @@ jobs:
           echo "many"
           echo "once with"
 
+#          깃허브에 이미 있는 변수 각각 commit id, repository id
       - name: githubAction 내에 있는 변수
         run: |
-#          깃허브에 이미 있는 변수 각각 commit id, repository id
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
 
       - name: 노출되면 안되는 값
-        run: echo ${{secrets.MY_KEY}}
+        run: |
+          echo ${{ secrets.MY_KEY }}
